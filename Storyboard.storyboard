@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="H8j-YB-POW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="KjH-iD-aJB">
+            <objects>
+                <viewController id="H8j-YB-POW" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tqg-50-4MA"/>
+                        <viewControllerLayoutGuide type="bottom" id="4qn-ZI-0Aw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hqk-RQ-aOQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="f5e-d5-CMb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4qn-ZI-0Aw" firstAttribute="top" secondItem="f5e-d5-CMb" secondAttribute="bottom" id="BKU-oP-5fz"/>
+                            <constraint firstItem="f5e-d5-CMb" firstAttribute="top" secondItem="hqk-RQ-aOQ" secondAttribute="topMargin" id="LsV-Bh-Y1V"/>
+                            <constraint firstItem="f5e-d5-CMb" firstAttribute="leading" secondItem="hqk-RQ-aOQ" secondAttribute="leadingMargin" constant="-16" id="YB3-rC-NVj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f5e-d5-CMb" secondAttribute="trailing" constant="-16" id="bzM-sG-Nvo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hnG-du-5Bp"/>
+                    <connections>
+                        <outlet property="tableView" destination="f5e-d5-CMb" id="Zf0-x5-MC3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4A-hE-ot8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="376"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
